@@ -1,0 +1,78 @@
+# CUBE_GMA anti-muon and alpha
+# $PATH -> path to where you want your output_name
+# output_name -> baseFile name, write the name of the file without the .root/.csv
+#                           the name of the file wil be the same for the .root and .csv files
+# Initialize kernel
+/run/initialize
+#
+/control/verbose 2
+/run/verbose 1
+/event/verbose 0
+#/tracking/verbose 1 
+# 
+/process/optical/cerenkov/setMaxBetaChange 1
+#/run/beamOn 10
+#
+/process/optical/cerenkov/setMaxPhotons  15
+/process/optical/cerenkov/setTrackSecondariesFirst false
+#
+# alpha
+# 0
+/analysis/setFileName $PATH/output_name
+/gun/particle alpha
+/gun/energy 1 MeV
+/run/beamOn 10000
+#
+# 1
+/analysis/setFileName $PATH/output_name
+/gun/particle alpha
+/gun/energy 10 MeV
+/run/beamOn 10000
+# 2
+/analysis/setFileName $PATH/output_name
+/gun/particle alpha
+/gun/energy 1 GeV
+/run/beamOn 10000
+#
+# 3
+/analysis/setFileName $PATH/output_name
+/gun/particle alpha
+/gun/energy 1 GeV
+/run/beamOn 10000
+#
+# 4
+/analysis/setFileName $PATH/output_name
+/gun/particle alpha
+/gun/energy 10 GeV
+/run/beamOn 10000
+#
+# anti-muon
+# 5
+/analysis/setFileName $PATH/output_name
+/gun/particle mu+
+/gun/energy 1 MeV
+/run/beamOn 10000
+#
+# 6
+/analysis/setFileName $PATH/output_name
+/gun/particle mu+
+/gun/energy 10 MeV
+/run/beamOn 10000
+#
+# 7
+/analysis/setFileName $PATH/output_name
+/gun/particle mu+
+/gun/energy 100 MeV
+/run/beamOn 10000
+#
+# 8
+/analysis/setFileName $PATH/output_name
+/gun/particle mu+
+/gun/energy 1 GeV
+/run/beamOn 10000
+#
+# 9
+/analysis/setFileName $PATH/output_name
+/gun/particle mu+
+/gun/energy 10 GeV
+/run/beamOn 10000

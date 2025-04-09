@@ -1,0 +1,101 @@
+# CUBE_GMA without optical processes, CUBE_GMA proton, CUBE_GLA proton, SPHERE_G-2.0 proton, SPHERE_G-2.5 proton
+# $PATH -> path to where you want your output_name
+# output_name -> baseFile name, write the name of the file without the .root/.csv
+#                           the name of the file wil be the same for the .root and .csv files
+# Initialize kernel
+/run/initialize
+#
+/control/verbose 2
+/run/verbose 1
+/event/verbose 0
+#/tracking/verbose 1 
+# 
+/process/optical/cerenkov/setMaxBetaChange 1
+#/run/beamOn 10
+#
+/process/optical/cerenkov/setMaxPhotons  15
+/process/optical/cerenkov/setTrackSecondariesFirst false
+#
+# 0
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 1 MeV
+/run/beamOn 10000
+#
+# 1
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 3 MeV
+/run/beamOn 10000
+#
+# 2
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 5 MeV
+/run/beamOn 10000
+#
+# 3
+/analysis/setFileName /$PATH/output_name
+/gun/particle proton
+/gun/energy 10 MeV
+/run/beamOn 10000
+#
+# 4
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 30 MeV
+/run/beamOn 10000
+#
+# 5
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 50 MeV
+/run/beamOn 10000
+#
+# 6
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 100 MeV
+/run/beamOn 10000
+#
+# 7
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 300 MeV
+/run/beamOn 10000
+#
+# 8
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 500 MeV
+/run/beamOn 10000
+#
+# 9
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 1 GeV
+/run/beamOn 10000
+#
+# 10
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 3 GeV
+/run/beamOn 10000
+#
+# 11
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 5 GeV
+/run/beamOn 10000
+#
+# 12
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 10 GeV
+/run/beamOn 10000
+#
+# 13
+/analysis/setFileName $PATH/output_name
+/gun/particle proton
+/gun/energy 30 GeV
+/run/beamOn 10000
