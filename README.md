@@ -1,5 +1,7 @@
 # OpticApro
-## Geant4 ver. 10.7
+## Geant4 ver. 11.1
+
+[![DOI](https://zenodo.org/badge/963449706.svg)](https://doi.org/10.5281/zenodo.15187835)
 
 > [!NOTE]
 > This version of OpticApro uses Geant4 11.1. If you are using Geant4 10.  
