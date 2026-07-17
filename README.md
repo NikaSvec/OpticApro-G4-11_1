@@ -22,10 +22,10 @@ This model was created to study the phenomenon of light flashes. The simulation 
 interactions of different particles found in cosmic rays with human eye. Simulation contains  
 four different models. Specifically:
 
-1. CUBE\_GMA or Cube geometry\_Geant4 More Air
-2. CUBE\_GLA or Cube geometry\_Geant4 Low Air
-3. SPHERE\_G-2.0 or Sphere geometry\_Geant4 - 2.0 diameter
-4. SPHERE\_G-2.5 or Sphere geometry\_Geant4 - 2.5 diameter.
+1. CG-MA or Cube geometry, Geant4 More Air
+2. CG-LA or Cube geometry, Geant4 Low Air
+3. SG-2.0 or Sphere geometry, Geant4 - 2.0 diameter
+4. SG-2.5 or Sphere geometry, Geant4 - 2.5 diameter.
 
 ## List of headers & sources
 
